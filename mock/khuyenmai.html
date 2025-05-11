@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chương Trình Khuyến Mãi</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom right, #ff7e00, #ff1a75); /* Nền gradient màu sắc tươi sáng */
+            margin: 0;
+            padding: 20px;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 10px;
+            background-color: #ffffff; /* Nền trắng cho nội dung */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            text-align: center;
+            color: #ff5722; /* Màu cam nổi bật */
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Đổ bóng cho tiêu đề */
+        }
+
+        h2 {
+            color: #ff4081; /* Màu hồng đậm */
+            font-size: 2rem;
+            margin-bottom: 15px;
+            text-transform: uppercase; /* In hoa */
+            border-bottom: 2px solid #ff4081; /* Đường viền dưới */
+            padding-bottom: 5px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #fce4ec; /* Nền hồng nhẹ */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .list {
+            margin-left: 20px;
+            text-align: left;
+        }
+
+        .list-item {
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+            color: #333; /* Màu chữ đen cho dễ đọc */
+            padding: 5px;
+            border-left: 5px solid #ff4081; /* Đường viền bên trái */
+            background-color: #ffe5f2; /* Nền nhẹ cho từng mục */
+        }
+
+        .highlight {
+            color: #ff4081; /* Màu hồng đậm */
+            font-weight: bold;
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ff5722; /* Màu cam */
+            color: white;
+            text-decoration: none; /* Bỏ gạch chân */
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .back-link:hover {
+            background-color: #e65c50; /* Màu cam đậm khi hover */
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Chương Trình Khuyến Mãi</h1>
+
+        <div class="section">
+            <h2>Thời Gian Khuyến Mãi:</h2>
+            <p>📅 Từ: <span class="highlight">[Ngày bắt đầu]</span></p>
+            <p>📅 Đến: <span class="highlight">[Ngày kết thúc]</span></p>
+        </div>
+
+        <div class="section">
+            <h2>Những Gì Chúng Tôi Cung Cấp:</h2>
+            <ul class="list">
+                <li class="list-item">🎉 Tour du lịch: Khám phá những địa điểm tuyệt vời với giá cả phải chăng.</li>
+                <li class="list-item">🏨 Khách sạn: Nghỉ ngơi tại những khách sạn sang trọng với mức giá ưu đãi.</li>
+                <li class="list-item">🎈 Hoạt động giải trí: Tham gia các hoạt động thú vị như lặn biển, tham quan, và nhiều hơn nữa!</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Cách Tham Gia:</h2>
+            <ol class="list">
+                <li class="list-item">🌐 Truy cập trang web của chúng tôi.</li>
+                <li class="list-item">📦 Chọn sản phẩm hoặc dịch vụ bạn muốn.</li>
+                <li class="list-item">🛒 Nhập mã khuyến mãi: <span class="highlight">SUMMER50</span> khi thanh toán.</li>
+            </ol>
+        </div>
+
+        <a class="back-link" href="javascript:void(0)" onclick="history.back()">Quay lại</a>
+    </div>
+</body>
+</html>

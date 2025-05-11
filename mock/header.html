@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hibtel - Hotel & Resort</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+        }
+
+        .tong {
+            display: flex;
+            width: 100%;
+            position: fixed;
+            z-index: 3;
+            background-color: #fff;
+        }
+
+        .logo-container {
+            background-color: #0a1a35;
+            height: 80px;
+            width: 35%;
+            display: flex;
+            align-items: center;
+            padding-left: 30px;
+            clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 80px;
+            width: 65%;
+            background-color: white;
+            padding: 0 30px;
+        }
+
+        .logo {
+            font-size: 35px;
+            font-weight: bold;
+            color: white;
+            margin-left: 10px;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        .nav-links ul {
+            display: flex;
+            list-style: none;
+            gap: 22px;
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+            line-height: 50px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: black;
+            font-weight: 600;
+            font-size: 18px;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #d03b39;
+        }
+
+        .cha {
+            position: relative;
+        }
+
+        .con {
+            display: none !important;
+            position: absolute;
+            width:150px;
+            left: -50px; 
+            background-color: #fff;
+            line-height: 50px;
+            top: 35px;
+            border-radius: 10px;
+        }
+
+        .con>li{
+            text-align: center;
+            margin-left: -20px;
+        }
+
+        .cha:hover .con {
+            display: block !important;
+        } 
+
+        .reservation-btn {
+            background-color: #d03b39;
+            color: rgb(243, 239, 239) !important;
+            text-decoration: none !important;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+            margin-left: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .reservation-btn:hover {
+            background-color: #b52e2c;
+        }
+    </style>
+</head>
+<body>
+    <div class="tong">
+        <div class="logo-container">
+            <span class="logo"><img src="../img/loho1.jpg" style="margin-right: 10px; height: 80px;"></span>
+        </div>
+        <nav class="navbar">
+            <div class="nav-links">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="room.html">Rooms</a></li>
+                    <li class="cha"><a href="#">Pages</a>
+                        <ul class="con">
+                            <li><a href="Services.html">Services</a></li>
+                            <li><a href="Gallery.html">Gallery</a></li>
+                            <li><a href="2.html">Restaurant</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <button class="reservation-btn"><a href="bookingNow.html" style="color: inherit; text-decoration: none;">RESERVATION</a></button>
+        </nav>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

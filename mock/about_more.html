@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Băng chuyền thông tin</title>
+ <script src="../jquery-3.7.1.js"></script>
+   <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="../fontawesome/carousel/owl.carousel.css">
+  <link rel="stylesheet" href="../fontawesome/carousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="../fontawesome/carousel/owl.theme.default.min.css">
+  <link rel="stylesheet" href="../fontawesome/fontawesome-free-6.7.2-web/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.2/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="../js/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>      
+  <script src="../js/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    
+  <script src="../fontawesome/carousel/owl.carousel.js"></script>
+  <script src="../fontawesome/carousel/owl.carousel.min.js"></script>
+  <script src="../js/aboutabout.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.owl-carousel').owlCarousel({
+      loop:true,
+      margin:10,
+      nav:true,
+      responsive:{
+        0:{ items:2 },
+        600:{ items:3 },
+        1000:{ items:4 }
+      }
+    });
+
+    const texts = [
+
+  `
+  <div>
+
+  <!-- Ảnh tiêu đề -->
+    <div style="text-align: center; margin-bottom: 20px;">
+    <img src="../imghuy/image/linhhoat.png" alt="Đội ngũ hỗ trợ khách hàng Hibtel" style="width: 60%; border-radius: 10px;">
+  </div>
+  <!-- Gói tiêu chuẩn -->
+  <div class="price-level" style="display: flex; align-items: center; gap: 15px; margin-bottom: 30px;">
+    <img src="../imghuy/image/tieuchuan.jpg" alt="Phòng tiêu chuẩn" style="width: 40%; border-radius: 8px;">
+    <div>
+      <h4 style="color:#da3c3c;">Gói dịch vụ tiêu chuẩn</h4>
+      <p>Gói này dành cho khách hàng muốn tiết kiệm chi phí nhưng vẫn đảm bảo đầy đủ tiện nghi cơ bản như wifi, nước uống, và không gian yên tĩnh.</p>
+      <p>Giá cả luôn được hiển thị rõ ràng, không phát sinh chi phí bất ngờ.</p>
+    </div>
+  </div>
+
+  <!-- Gói cao cấp -->
+  <div class="price-level" style="display: flex; flex-direction: row-reverse; align-items: center; gap: 15px; margin-bottom: 30px;">
+    <img src="../imghuy/image/caocap.webp" alt="Phòng cao cấp" style="width: 40%; border-radius: 8px;">
+    <div>
+      <h4 style="color:#da3c3c;">Gói dịch vụ cao cấp</h4>
+      <p>Dành cho khách hàng muốn trải nghiệm sự sang trọng với phòng view đẹp, buffet sáng, và dịch vụ phòng 24/7.</p>
+      <p>Chi phí được niêm yết rõ trên website và có thể đặt trực tuyến.</p>
+    </div>
+  </div>
+
+  <!-- Ảnh minh họa khuyến mãi -->
+  <section class="promotions" style="display:flex;justify-content:space-around;">
+    <div style="justify-content: center; 
+                              box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3), 0 4px 8px rgba(0, 0, 0, 0.15); 
+                              padding: 24px; 
+                              border-radius: 16px; 
+                              background: #fff; 
+                              width: 40%; 
+                              margin: 24px auto; 
+                              text-align: center;">
+      <img src="../imghuy/image/save-doller.svg" alt="Khuyến mãi hấp dẫn" style="width:11%;">
+      <h4 style="height: 50px; line-height: 50px; color:#da3c3c;">Ưu đãi cho mọi ngân sách</h4>
+      <p>Hibtel thường xuyên triển khai khuyến mãi dành cho cả khách cá nhân và doanh nghiệp. Dù bạn chọn mức giá nào, bạn cũng có thể được giảm giá nếu đặt sớm hoặc theo nhóm.</p>
+    </div>
+
+    <div style="justify-content: center; 
+                              box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3), 0 4px 8px rgba(0, 0, 0, 0.15); 
+                              padding: 24px; 
+                              border-radius: 16px; 
+                              background: #fff; 
+                              width: 40%; 
+                              margin: 24px auto; 
+                              text-align: center;">
+      <img src="../imghuy/image/amenities-1.svg" alt="Khuyến mãi hấp dẫn" style="width:11%;">
+      <h4 style="height: 50px; line-height: 50px; color:#da3c3c;">Linh hoạt theo nhu cầu</h4>
+      <p>Khách hàng có thể tùy chọn thêm dịch vụ như bữa sáng, đưa đón sân bay, hoặc spa mà không bị ràng buộc theo gói cố định.</p>
+    </div> 
+  </section>
+
+  <!-- Kết luận -->
+  <section class="conclusion" style="margin-top: 30px;">
+    <h4 style="color:#da3c3c;">Chúng tôi phục vụ mọi đối tượng</h4>
+    <p>Dù bạn là khách công tác, khách du lịch tự túc, hay hộ gia đình, Hibtel đều có gói giá phù hợp cho bạn.</p>
+    <p>Hãy để chúng tôi giúp bạn có một kỳ nghỉ thoải mái mà không lo lắng về ngân sách.</p>
+    <img src="../imghuy/image/hailong.jpg" alt="Khách hàng hài lòng" style="width:100%; margin-top: 10px; border-radius: 8px;">
+  </section>
+</div>
+
+
+  `,
+  `
+<div class="detail" >
+
+  <!-- Ảnh mở đầu -->
+  <img src="../imghuy/image/banneruudai.png" alt="Ưu đãi tại Hibtel" style="width: 100%; border-radius: 10px; margin-bottom: 20px;">
+
+  <!-- Giới thiệu -->
+  <p>Tại Hibtel, chúng tôi tin rằng sự hài lòng của khách hàng không chỉ đến từ chất lượng dịch vụ, mà còn từ những giá trị cộng thêm. Vì vậy, các chương trình ưu đãi hấp dẫn luôn được triển khai thường xuyên và linh hoạt.</p>
+
+  <!-- Các hình thức ưu đãi -->
+   <!-- Nội dung mở rộng -->
+  <p>Các ưu đãi luôn được cập nhật rõ ràng trên trang web chính thức và tại quầy lễ tân. Nhân viên chúng tôi luôn sẵn sàng tư vấn để bạn không bỏ lỡ bất kỳ cơ hội tiết kiệm nào.</p>
+  <p>Hibtel cũng kết hợp với các đối tác du lịch và ngân hàng để triển khai các chương trình đồng thương hiệu, mang lại thêm nhiều giá trị cho khách hàng.</p>
+  <!-- Kết luận -->
+  <p style="margin-top: 20px;">Dù bạn là khách du lịch ngắn ngày hay khách lưu trú dài hạn, Hibtel luôn có một ưu đãi dành riêng cho bạn. Hãy theo dõi thường xuyên để không bỏ lỡ những cơ hội tiết kiệm tuyệt vời.</p>
+  </div>
+
+  <!-- Ảnh minh họa thêm -->
+  <img src="../imghuy/image/phonguudai.png" alt="Phòng khách sạn khuyến mãi" style="width: 100%; border-radius: 10px; margin-bottom: 20px;">
+<table style="background-color: wheat; text-align: center;color: black;">
+  <tr>
+    <th><h4 style="color:#da3c3c;">Ưu đãi đặt phòng sớm</h4></th>
+    <th><h4 style="color:#da3c3c;">Chương trình khách hàng thân thiết</h4></th>
+    <th><h4 style="color:#da3c3c;">Ưu đãi theo mùa</h4></th>
+  </tr>
+  <tr>
+    <td><p>Giảm ngay 30% cho khách hàng đặt trước từ 14 ngày trở lên. Đây là cách tốt nhất để tiết kiệm chi phí cho kỳ nghỉ sắp tới.</p>
+    </td>
+    <td><p>Thành viên sẽ được tích điểm và nhận các ưu đãi như nâng hạng phòng, miễn phí bữa sáng hoặc giảm giá lần sau.</p></td>
+    <td><p>Hibtel tổ chức các đợt khuyến mãi theo mùa lễ hội, giúp bạn tận hưởng kỳ nghỉ trọn vẹn với chi phí hợp lý.</p>
+    </td>
+  </tr>
+</table>
+ 
+</div>
+
+  `,
+  `
+<div class="detail" style=" line-height: 1.6; margin: auto;">
+
+  <!-- Ảnh đầu -->
+    <div style="text-align: center; margin-bottom: 20px;">
+    <img src="../imghuy/image/nhanvien.webp" alt="Đội ngũ hỗ trợ khách hàng Hibtel" style="width: 95%; max-width: 600px; border-radius: 10px;">
+  </div>
+  <p>Hibtel không chỉ là nơi bạn lưu trú trong vài ngày — chúng tôi là đối tác đáng tin cậy trên hành trình dài hạn của bạn. Dù bạn là doanh nhân công tác lâu ngày, khách quốc tế cần nơi ở tạm thời, hay gia đình muốn định kỳ nghỉ dưỡng, Hibtel đều có những chính sách hỗ trợ đặc biệt dành riêng cho bạn.</p>
+
+  <p>Chúng tôi cung cấp các <strong>gói lưu trú dài hạn</strong> linh hoạt với mức giá ưu đãi, bao gồm dọn phòng định kỳ, giặt là, Internet tốc độ cao và không gian làm việc yên tĩnh. Các gói này giúp bạn tiết kiệm đáng kể chi phí so với lưu trú ngắn ngày.</p>
+
+  <p>Đội ngũ chăm sóc khách hàng của Hibtel hoạt động <strong>24/7</strong>, sẵn sàng hỗ trợ bạn từ những việc nhỏ nhất như gọi taxi, đặt vé máy bay, đến hỗ trợ làm việc từ xa hoặc xử lý các yêu cầu đặc biệt.</p>
+</div>
+  <p>Với Hibtel, bạn không chỉ thuê một phòng — bạn đang sở hữu một nơi đáng tin cậy để sống, làm việc và thư giãn lâu dài. Chính sách hỗ trợ lâu dài của chúng tôi chính là cam kết cho sự đồng hành bền vững với từng khách hàng.</p>
+</div>
+  <!-- Bố cục 2 cột -->
+  <div style="display: flex; margin-top: 30px; justify-content:space-around;">
+    <div style="background: #fffb8d; width: 750px;color:#da3c3c;">
+      <h4>🙋‍♂️ Hỗ trợ cá nhân hóa</h4>
+      <p>Mỗi khách dài hạn đều có một nhân viên hỗ trợ riêng, đảm bảo mọi nhu cầu cá nhân đều được chăm sóc nhanh chóng và tận tình.</p>
+    </div>
+    <div style="background: #fffb8d;; width: 750px;color:#da3c3c;;">
+      <h4>🏢 Dịch vụ dành riêng cho công ty</h4>
+      <p>Hibtel cung cấp hợp đồng lưu trú lâu dài cho doanh nghiệp với nhiều ưu đãi như báo cáo chi phí định kỳ, hóa đơn VAT và linh hoạt trong lịch trình.</p>
+    </div>
+  </div>
+
+
+  <!-- Ảnh bổ sung -->
+    <div style="text-align: center; margin-bottom: 20px;">
+    <img src="../imghuy/image/phongdai.jpg" alt="Đội ngũ hỗ trợ khách hàng Hibtel" style="width: 90%; border-radius: 10px;">
+  
+
+  `,
+  `
+  <div class="detail" style=" max-width: 1000px; margin: auto;">
+
+  <!-- Hình ảnh minh họa lớn -->
+  <img src="../imghuy/image/bannergia.webp" alt="Các lựa chọn mức giá tại Hibtel" style="width: 100%; border-radius: 10px; margin-bottom: 30px;">
+
+  <!-- Lưới 3 gói dịch vụ -->
+  <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
+    <div style="flex: 1; min-width: 280px; background: #f5f5f5; padding: 20px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+      <h4 style="text-align: center; color: #007bff;">💰Tiết kiệm</h4>
+      <p>Phù hợp cho khách du lịch ngắn ngày, sinh viên hoặc người có ngân sách hạn chế. Phòng tiêu chuẩn, sạch sẽ, tiện nghi cơ bản với mức giá tốt nhất.</p>
+      <ul>
+        <li>Phòng đơn nhỏ gọn</li>
+        <li>Wi-Fi miễn phí</li>
+        <li>Ưu đãi cuối tuần</li>
+      </ul>
+    </div>
+
+    <div style="flex: 1; min-width: 280px; background: #f5f5f5; padding: 20px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+      <h4 style="text-align: center; color: #28a745;">✅Tiêu chuẩn</h4>
+      <p>Lựa chọn phổ biến nhất dành cho gia đình hoặc khách đi công tác. Cân bằng giữa tiện nghi và chi phí, với dịch vụ đi kèm chuyên nghiệp.</p>
+      <ul>
+        <li>Phòng đôi hoặc gia đình</li>
+        <li>Bữa sáng miễn phí</li>
+        <li>Dọn phòng mỗi ngày</li>
+      </ul>
+    </div>
+
+    <div style="flex: 1; min-width: 280px; background: #f5f5f5; padding: 20px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+      <h4 style="text-align: center; color: #dc3545;">✨Cao cấp</h4>
+      <p>Dành cho khách hàng yêu cầu cao về sự sang trọng và riêng tư. Trang thiết bị hiện đại, không gian rộng rãi và nhiều tiện ích đặc biệt.</p>
+      <ul>
+        <li>Phòng suite sang trọng</li>
+        <li>Đưa đón sân bay miễn phí</li>
+        <li>Quầy bar & spa riêng</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Ghi chú thêm -->
+  <p style="margin-top: 30px; text-align: center;">
+    Dù bạn chọn gói nào, Hibtel luôn đảm bảo chất lượng dịch vụ đồng đều, minh bạch trong giá cả và sẵn sàng hỗ trợ bạn tận tình.
+  </p>
+</div>
+
+
+  `
+];
+$('.item').on('click', function(){
+  const index = $(this).data('index');
+  $('#infoBox').html(texts[index]);
+
+  // Cuộn xuống mượt đến khung hiển thị
+  $('html, body').animate({
+    scrollTop: $('#infoBox').offset().top - 50 // -50 để cách một chút phía trên
+  }, 600); // thời gian cuộn: 600ms
+});
+  });
+</script>
+  <style>
+    body{
+      margin: 0;
+      font-family: 'Times New Roman', Times, serif;
+    }
+    p, h3{
+      color: black;
+    }
+    p{
+      font-size: 20px;
+      font-family: 'Times New Roman', Times, serif;
+    }
+ 
+    .content{
+      display: flex;
+      justify-content: space-around;
+    }
+    .content img{
+      height: 600px;
+      width: 550px;
+    }
+    .vanb{
+      width: 40%;
+    }
+    
+    .item{
+    background-color: #da3c3c;
+    color: #fff !important;
+    
+    }
+    .carousel-wrapper {
+      max-width: 100%;
+    padding: 0px 0;
+    height:fit-content;
+    z-index: 2;
+    }
+    .owl-carousel .item {
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .owl-carousel .item:hover {
+      background: #ddd;
+    }
+    .info-box {
+      margin: 20px auto;
+      text-align: center;
+      max-width: 100%;
+      padding: 15px;
+      background: #fafafa;
+      font-family: 'Times New Roman',;
+      color:#da3c3c;
+      font-size: 20px;
+      transition: box-shadow 0.3 ease;
+    }
+    .info-box:focus, .info-box:target {
+  box-shadow: 0 0 10px rgba(0,123,255,0.5);
+}
+  </style>
+
+   <script>
+    $(document).ready(function() {
+      $('#header').load('header.html');
+      $('#footer').load('footer.html');
+      $('#quaylai').load('quaylai.html'); // Tải nội dung từ header.html
+    });
+  </script>
+</head>
+<body>
+<div id="header" ></div>
+    <!--banner-->
+    <div class="banner" >
+      <div class="main__banner" >
+          <div class="banner__img">
+              <img src="../imghuy/image/Banner_about_more.png" >
+          </div>
+          <div class="banner__text">
+              <h1>Giá cả và dịch vụ</h1>
+              <ul>
+                  <li><a href="/">Giới thiệu tổng quan</a></li>
+                  <li>Giá cả và dịch vụ</li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  <!--end banner-->
+
+<div class="carousel-wrapper" >
+  <div class="owl-carousel">
+    <div class="item" data-index="0">Linh hoạt trọn gói</div>
+    <div class="item" data-index="1">Ưu đãi thường xuyên</div>
+    <div class="item" data-index="2">Hỗ trợ dài hạn</div>
+    <div class="item" data-index="3">Đa dạng mức giá</div>
+  </div>
+</div>
+
+<div class="info-box" id="infoBox">
+  Nhấn vào một mục để xem thông tin chi tiết.
+</div>
+
+
+
+</body>
+</html>
