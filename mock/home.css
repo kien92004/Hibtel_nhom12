@@ -142,7 +142,7 @@ h1, h2, h3, h4, h5, h6 {
     left: 10%;
     width: 80%;
     height: 60%;
-    background-color: rgba(160, 226, 238, 0.95);
+    background-color: rgba(232, 251, 255, 0.95);
     padding: 2rem;
     opacity: 0;
     transition: opacity 0.5s ease;
