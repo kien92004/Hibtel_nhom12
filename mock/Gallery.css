@@ -112,6 +112,11 @@
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s;
+
+}
+.list__tabs>p{
+    text-align: center;
+    margin-top: 12px;
 }
 
 .list__tabs.current {

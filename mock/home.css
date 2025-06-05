@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 2;
     text-align: center !important;
     padding-top: 25vh;
-    margin-left: 30%;
+    margin-left: 15%;
 }
 
  /* Availability Form */
@@ -475,7 +475,7 @@ opacity: 0;
 }
 
 .card-title, .d-flex, .text-danger{
-    margin-left: 5px;
+    margin-left: 10px;
 }
 .d-flex{
     padding:5px;
