@@ -399,19 +399,19 @@ function createTestimonialHTML(index) {
 function initBlogs() {
     const blogs = [
         {
-            title: "Our Miami Beach Hotel Is Open Right Now",
+            title: "Khách sạn Hibtel đã được cải tạo, nâng cấp",
             date: "25 July, 2025",
             author: "Kien Dang",
             img: "../img/resort-11.jpg"
         },
         {
-            title: "Our Miami Beach Hotel Is Open Right Now",
+            title: "Tiện nghi mới đã được thêm vào khách sạn ",
             date: "25 July, 2025",
             author: "Huy Lee",
             img: "../img/resort-12.jpg"
         },
         {
-            title: "Our Miami Beach Hotel Is Open Right Now",
+            title: "Nhiều ưu đãi đặc biệt cho mùa hè",
             date: "25 July, 2025",
             author: "Khoa Cao",
             img: "../img/resort-13.jpg"
@@ -430,13 +430,13 @@ function createBlogHTML(blog, index) {
                 <div class="blog-image">
                     <img src="${blog.img}" alt="${blog.title}">
                 </div>
-                <div class="card-body">
-                    <h5 class="card-title fw-bold mb-3">${blog.title}</h5>
-                    <div class="d-flex justify-content-between text-muted mb-3">
+                <div class="card-body" style="padding: 0 15px;">
+                    <h5 class="card-title fw-bold mb-3 mt-3">${blog.title}</h5>
+                    <div class="d-flex justify-content-between text-muted mb-3" >
                         <small><i class="far fa-clock me-1"></i> ${blog.date}</small>
                         <small><i class="fas fa-user me-1"></i> by ${blog.author}</small>
                     </div>
-                    <a href="room.html" class="text-danger text-decoration-underline">READ MORE</a>
+                    <a href="phong1.html" class="text-danger text-decoration-underline">READ MORE</a>
                 </div>
             </div>
         </div>
